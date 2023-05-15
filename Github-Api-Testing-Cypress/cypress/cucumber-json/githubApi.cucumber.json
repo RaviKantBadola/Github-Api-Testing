@@ -1,0 +1,812 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Api Testing for GitHub As a Project",
+    "line": 1,
+    "id": "api-testing-for-github-as-a-project",
+    "tags": [],
+    "uri": "githubApi.feature",
+    "elements": [
+      {
+        "id": "api-testing-for-github-as-a-project;create-a-repository-for-a-authenticated-user",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "CREATE A REPOSITORY FOR A AUTHENTICATED USER",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Make a post request with the resource '/user/repos'",
+            "result": {
+              "status": "passed",
+              "duration": 1551000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Print the response in console",
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Store Necessary data in the variable",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "The response status code should be '201'",
+            "result": {
+              "status": "passed",
+              "duration": 6000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "Check Wether the RepoName is stored in variable 'Team-star-catcherapirepo'",
+            "result": {
+              "status": "passed",
+              "duration": 5000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "api-testing-for-github-as-a-project;update-a-repository",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "UPDATE A REPOSITORY",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "Make a patch request with resource '/repos/RaviKantBadola/Team-star-catcherapirepo'",
+            "result": {
+              "status": "passed",
+              "duration": 575000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "Print the response in console",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "Store Necessary data in the variable",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "The response status code should be '200'",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "Check the Updated RepoName 'Team-Gelexy'",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "api-testing-for-github-as-a-project;get-a-repository",
+        "keyword": "Scenario",
+        "line": 100,
+        "name": "GET A REPOSITORY",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 101,
+            "name": "Make a GET request  with the resource '/repos/RaviKantBadola/Team-Gelexy'",
+            "result": {
+              "status": "passed",
+              "duration": 437000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 102,
+            "name": "Print the response in console",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 103,
+            "name": "The response status code should be '200'",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "api-testing-for-github-as-a-project;create-file-content",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "CREATE FILE CONTENT",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 23,
+            "name": "Make a PUT request with the resource '/repos/RaviKantBadola/Team-Gelexy/contents/README.md'",
+            "result": {
+              "status": "passed",
+              "duration": 530000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "Print the response in console",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "Store Necessary data in the variable",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "The response status code should be '201'",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "Check Wether the sha value is stored in variable",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "api-testing-for-github-as-a-project;create-a-fork",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "CREATE A FORK",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 30,
+            "name": "Make a POST request with the resource '/repos/RaviKantBadola/Team-Gelexy/forks'",
+            "result": {
+              "status": "passed",
+              "duration": 1117000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "Print the response in console",
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "The response status code should be '202'",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "api-testing-for-github-as-a-project;list-forks",
+        "keyword": "Scenario",
+        "line": 34,
+        "name": "LIST FORKS",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 35,
+            "name": "Make a GET request For FORKS with the resource '/repos/RaviKantBadola/Team-Gelexy/forks'",
+            "result": {
+              "status": "passed",
+              "duration": 385000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "Print the response in console",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "The response status code should be '200'",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "api-testing-for-github-as-a-project;list-repositories-for-a-user",
+        "keyword": "Scenario",
+        "line": 39,
+        "name": "LIST REPOSITORIES FOR A USER",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 40,
+            "name": "Make a GET request For LIST OF REPOSITORY with the resource '/users/RaviKantBadola/repos'",
+            "result": {
+              "status": "passed",
+              "duration": 444000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 41,
+            "name": "Print the response in console",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 42,
+            "name": "The response status code should be '200'",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "api-testing-for-github-as-a-project;list-repository-language",
+        "keyword": "Scenario",
+        "line": 44,
+        "name": "LIST REPOSITORY LANGUAGE",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 45,
+            "name": "Make a GET request for repositories languages with the resource '/repos/RaviKantBadola/Team-Gelexy/languages'",
+            "result": {
+              "status": "passed",
+              "duration": 326000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 46,
+            "name": "Print the response in console",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 47,
+            "name": "The response status code should be '200'",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "api-testing-for-github-as-a-project;list-public-repositories",
+        "keyword": "Scenario",
+        "line": 49,
+        "name": "LIST PUBLIC REPOSITORIES",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 50,
+            "name": "Make a GET request for public repositories with the resource '/repositories'",
+            "result": {
+              "status": "passed",
+              "duration": 546000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 51,
+            "name": "Print the response in console",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 52,
+            "name": "The response status code should be '200'",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "api-testing-for-github-as-a-project;create-a-release",
+        "keyword": "Scenario",
+        "line": 55,
+        "name": "CREATE A RELEASE",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 56,
+            "name": "Make a POST request to create a release with the resource '/repos/RaviKantBadola/Team-Gelexy/releases'",
+            "result": {
+              "status": "passed",
+              "duration": 693000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 57,
+            "name": "Print the response in console",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 58,
+            "name": "The response status code should be '201'",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "api-testing-for-github-as-a-project;list-repository-tags",
+        "keyword": "Scenario",
+        "line": 60,
+        "name": "LIST REPOSITORY TAGS",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 61,
+            "name": "Make a GET request for repositories tags with the resource '/repos/RaviKantBadola/Team-Gelexy/tags'",
+            "result": {
+              "status": "passed",
+              "duration": 331000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 62,
+            "name": "Print the response in console",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 63,
+            "name": "The response status code should be '200'",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "api-testing-for-github-as-a-project;create-an-autolink-reference-for-a-repository",
+        "keyword": "Scenario",
+        "line": 65,
+        "name": "CREATE AN AUTOLINK REFERENCE FOR A REPOSITORY",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 66,
+            "name": "Make a POST request For autolink with the resource '/repos/RaviKantBadola/Team-Gelexy/autolinks'",
+            "result": {
+              "status": "passed",
+              "duration": 373000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 67,
+            "name": "Print the response in console",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 68,
+            "name": "Store Necessary data in the variable",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 69,
+            "name": "The response status code should be '201'",
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "api-testing-for-github-as-a-project;replace-all-repository-topics",
+        "keyword": "Scenario",
+        "line": 71,
+        "name": "REPLACE ALL REPOSITORY TOPICS",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 72,
+            "name": "Make a PUT request for repositories topics with the resource '/repos/RaviKantBadola/Team-Gelexy/topics'",
+            "result": {
+              "status": "passed",
+              "duration": 934000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 73,
+            "name": "Print the response in console",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 74,
+            "name": "The response status code should be '200'",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "api-testing-for-github-as-a-project;get-all-repository-topics",
+        "keyword": "Scenario",
+        "line": 76,
+        "name": "GET ALL REPOSITORY TOPICS",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 77,
+            "name": "Make a GET request for repositories topics with the resource '/repos/RaviKantBadola/Team-Gelexy/topics'",
+            "result": {
+              "status": "passed",
+              "duration": 376000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 78,
+            "name": "Print the response in console",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 79,
+            "name": "The response status code should be '200'",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "api-testing-for-github-as-a-project;get-an-autolink-reference-for-a-repository",
+        "keyword": "Scenario",
+        "line": 81,
+        "name": "GET AN AUTOLINK REFERENCE FOR A REPOSITORY",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 82,
+            "name": "Make a GET request for repositories autolink with the resource '/repos/RaviKantBadola/Team-Gelexy/autolinks/'",
+            "result": {
+              "status": "passed",
+              "duration": 312000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 83,
+            "name": "Print the response in console",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 84,
+            "name": "The response status code should be '200'",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "api-testing-for-github-as-a-project;delete-from-an-autolink-reference-for-a-repository",
+        "keyword": "Scenario",
+        "line": 86,
+        "name": "DELETE FROM AN AUTOLINK REFERENCE FOR A REPOSITORY",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 87,
+            "name": "Make a Delete request to delete autolink with the resource '/repos/RaviKantBadola/Team-Gelexy/autolinks/'",
+            "result": {
+              "status": "passed",
+              "duration": 321000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 88,
+            "name": "The Delete response status code should be '204'",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "api-testing-for-github-as-a-project;delete-a-fork",
+        "keyword": "Scenario",
+        "line": 91,
+        "name": "DELETE A FORK",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 92,
+            "name": "Make a Delete request with the resource '/repos/Team-Star-Catcher/New-Fork'",
+            "result": {
+              "status": "passed",
+              "duration": 5841000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 93,
+            "name": "Print the response in console",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 94,
+            "name": "The response status code should be '204'",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "api-testing-for-github-as-a-project;delete-a-file",
+        "keyword": "Scenario",
+        "line": 96,
+        "name": "DELETE A FILE",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 97,
+            "name": "Make a Delete file request with the resource '/repos/RaviKantBadola/Team-Gelexy/contents/README.md'",
+            "result": {
+              "status": "passed",
+              "duration": 546000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 98,
+            "name": "The response status code should be '200'",
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "api-testing-for-github-as-a-project;delete-a-repository",
+        "keyword": "Scenario",
+        "line": 106,
+        "name": "DELETE A REPOSITORY",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 107,
+            "name": "Make a Delete request with the resource '/repos/RaviKantBadola/Team-star-catcherapirepo'",
+            "result": {
+              "status": "passed",
+              "duration": 5771000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 108,
+            "name": "The Delete response status code should be '204'",
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
